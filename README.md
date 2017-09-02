@@ -9,7 +9,7 @@ mysql的Hbase 存储插件代码，主要目的是为了做海量日志型存储
 编译hbase存储引擎插件的步骤如下：
 * 拷贝mysql-plugin-code目录下的hbase目录到 $MYSQL_CODE/storage目录下
 * 准备thrift-0.9.2和boost的开发环境，把他们放到指定的目录下：/data/3dpartylib
-   对应的子目录结构为：
+   对应的子目录结构为：  
   /data/3dpartylib/
   
                   thrift/
@@ -81,27 +81,27 @@ hbase_idle_size=5
 
 
 # 使用hase存储引擎
-   create table a (
-id int primary key,
-name varchar(32) ,
-t date
+   create table a (  
+id int primary key,  
+name varchar(32) ,  
+t date  
 ) engine='hbase' ;
 
 
 
-   create table a4 (
-id int primary key,
-name varchar(32) ,
-t date
-) engine='hbase' ;
+   create table a4 (  
+id int primary key,  
+name varchar(32) ,  
+t date  
+) engine='hbase' ;  
 
 
-   insert into a values ( 1, 'abc', now() ) ;
-insert into a values ( 2, 'ffff', now() ) ;
-insert into a values ( 3, 'bcd', now() ) ;
-insert into a values ( -1, 'vv', now() ) ;
-insert into a values ( 256, 'jj', now() ) ;
-insert into a values ( -256, 'x', now() ) ;
+insert into a values ( 1, 'abc', now() ) ;  
+insert into a values ( 2, 'ffff', now() ) ;  
+insert into a values ( 3, 'bcd', now() ) ;  
+insert into a values ( -1, 'vv', now() ) ;  
+insert into a values ( 256, 'jj', now() ) ;  
+insert into a values ( -256, 'x', now() ) ;  
 
    select * from a ;
 
