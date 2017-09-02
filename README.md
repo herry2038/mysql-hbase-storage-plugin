@@ -105,6 +105,13 @@ insert into a values ( -256, 'x', now() ) ;
 
    select * from a ;
 
+# 已经支持的功能有
+
+- 主键
+
+- 第二索引
+
+
 
 # 后记
 
