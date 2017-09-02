@@ -2,7 +2,7 @@
 mysql的Hbase 存储插件代码，主要目的是为了做海量日志型存储。
 
 里面的代码由两个部分组成：
-## mysql-plugin-code
+## 1、mysql-plugin-code
 
 这块是MySQL的hbase插件代码。
 
@@ -28,7 +28,7 @@ mysql的Hbase 存储插件代码，主要目的是为了做海量日志型存储
 * cmake ..
 * make
 
-## hbase-thrift-server
+## 2、hbase-thrift-server
 
 hbase-thrift-server代码是经过改造过的hbase-thrift服务，因为原生的thrift-server代码是采用Thrift原生的服务框架，它缺省采用了一个连接一个线程的服务框架。
 承载的服务能力有限。
