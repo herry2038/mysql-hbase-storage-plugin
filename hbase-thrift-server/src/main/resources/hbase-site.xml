@@ -1,0 +1,44 @@
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+
+  <property>
+     <name>hbase.zookeeper.quorum</name>
+     <value>mypc</value>
+  </property>
+  <property>
+    <name>hbase.rootdir</name>
+    <value>file:////data/hbase</value>
+  </property>
+
+
+  <property>
+    <name>hbase.thrift.info.port</name>
+    <value>-1</value>
+  </property>
+
+
+
+  <property>
+    <name>hbase.master.dns.interface</name>
+    <value>default</value>
+  </property>
+  <property>
+    <name>hbase.master.ipc.address</name>
+    <value>mypc</value>
+  </property>
+
+  <property>
+    <name>hbase.regionserver.dns.interface</name>
+    <value>default</value>
+  </property>
+  <property>
+    <name>hbase.regionserver.ipc.address</name>
+    <value>mypc</value>
+  </property>
+
+  <property>
+    <name>hbase.zookeeper.dns.interface</name>
+    <value>default</value>
+  </property>
+
+</configuration>

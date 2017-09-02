@@ -1,0 +1,2 @@
+java -jar .\swift-generator-cli-0.19.3-standalone.jar  -override_package  org.apache.hadoop.hbase.swift.generated -use_java_namespace org\apache\hadoop\hbase\thrift\Hbase.thrift -out ..\java
+thrift-0.9.2 --gen cpp -out %{MYSQL_CODE}\storage\hbase\gen-cpp org\apache\hadoop\hbase\thrift\Hbase.thrift
